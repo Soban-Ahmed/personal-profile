@@ -33,6 +33,36 @@ p{
     line-height: 2;
 }
 
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.bg-secondary {
+    background-color: #2c3e50 !important;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
 .intro{
     width: 30%;
     margin-left: auto; 
@@ -157,6 +187,28 @@ hr{
     background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
     background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
  }
+
+ @media (min-width: 992px){
+#mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}}
+@media (min-width: 992px){
+#mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+}}
+@media (min-width: 992px){
+.navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}}
+
+@media (min-width: 992px){
+.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
+    flex-wrap: nowrap;
+}}
 
 @media only screen and (max-width: 576px) {
   .mountain-image {
